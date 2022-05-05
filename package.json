@@ -20,6 +20,10 @@
   "bugs": {
     "url": "https://github.com/TonyPanczenko/rplace-concept-backend/issues"
   },
+  "imports": {
+    "#bin/*": "./bin/*",
+    "#lib/*": "./lib/*"
+  },
   "homepage": "https://github.com/TonyPanczenko/rplace-concept-backend#readme",
   "devDependencies": {
     "aws-cdk": "2.20.0",
