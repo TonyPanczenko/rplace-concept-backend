@@ -2,6 +2,9 @@
   "name": "rplace-concept-backend",
   "version": "0.1.0",
   "description": "backend for rplace-concept app",
+  "engines": {
+    "node": ">=17.0.0"
+  },
   "bin": {
     "rplace-concept-backend": "bin/rplace-concept-backend.js"
   },
