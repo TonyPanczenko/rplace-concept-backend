@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "backend for rplace-concept app",
   "engines": {
-    "node": ">=17.0.0"
+    "node": ">=16.0.0"
   },
   "bin": {
     "rplace-concept-backend": "bin/rplace-concept-backend.js"
@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/TonyPanczenko/rplace-concept-backend#readme",
   "devDependencies": {
-    "aws-cdk": "2.20.0",
+    "aws-cdk": "^2.24.1",
     "eslint": "^8.13.0",
     "eslint-plugin-node": "^11.1.0",
     "jest": "^26.4.2"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.87.0",
-    "aws-cdk-lib": "2.20.0",
+    "aws-cdk-lib": "^2.24.1",
     "constructs": "^10.0.0",
     "dotenv": "^16.0.0"
   }
