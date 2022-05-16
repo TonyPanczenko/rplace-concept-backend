@@ -9,7 +9,8 @@
     "rplace-concept-backend": "bin/rplace-concept-backend.js"
   },
   "scripts": {
-    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "build": "npx webpack bundle",
+    "deploy": "npx webpack bundle && npx cdk deploy",
     "cdk": "cdk",
     "test": "jest",
     "lint": "npx eslint **/*.js --fix"
