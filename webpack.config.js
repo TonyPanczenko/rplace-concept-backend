@@ -1,7 +1,5 @@
 /* eslint-disable node/no-unpublished-require */
 const path = require('path');
-// const { IgnorePlugin } = require('webpack');
-const TerserPlugin = require('terser-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV || 'production' == 'production';
 
@@ -12,6 +10,7 @@ const config = {
   output: {
     filename: '[name]/index.js',
     path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'commonjs',
     chunkFormat: 'commonjs'
   },
   target: 'node',
@@ -19,19 +18,6 @@ const config = {
     fallback: {
       util: false
     }
-  },
-  // plugins: [
-  //   new IgnorePlugin({
-  //     resourceRegExp: /aws-sdk/,
-  //   })
-  // ],
-  optimization: {
-    minimizer: [new TerserPlugin({
-      extractComments: false,
-      terserOptions: {
-        mangle: false
-      }
-    })],
   },
   externals: {
     'aws-sdk': 'commonjs aws-sdk',
