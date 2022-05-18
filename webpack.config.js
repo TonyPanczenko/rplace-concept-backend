@@ -5,8 +5,8 @@ const isProduction = process.env.NODE_ENV || 'production' == 'production';
 
 const config = {
   entry: {
-    addPixel: './lib/api/add-pixel/index.js',
-    getImage: './lib/api/get-image/index.js'
+    'add-pixel': './lib/api/add-pixel/index.js',
+    'get-image': './lib/api/get-image/index.js'
   },
   output: {
     filename: '[name]/index.js',
