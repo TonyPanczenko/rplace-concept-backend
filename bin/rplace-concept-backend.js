@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 const dotenv = require('dotenv');
-dotenv.config();
-
 const { App } = require('aws-cdk-lib');
 const { BackendStack } = require('../lib/backend-stack');
+
+dotenv.config();
 
 const app = new App();
 new BackendStack(app, 'BackendStack', {
