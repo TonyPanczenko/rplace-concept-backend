@@ -27,7 +27,7 @@
   "homepage": "https://github.com/TonyPanczenko/rplace-concept-backend#readme",
   "devDependencies": {
     "@webpack-cli/generators": "^2.4.2",
-    "aws-cdk": "^2.24.1",
+    "aws-cdk": "^2.25.0",
     "aws-sdk": "^2.1135.0",
     "eslint": "^8.13.0",
     "eslint-plugin-node": "^11.1.0",
@@ -38,7 +38,7 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.24.1",
+    "aws-cdk-lib": "^2.25.0",
     "constructs": "^10.0.0",
     "dotenv": "^16.0.0"
   }
