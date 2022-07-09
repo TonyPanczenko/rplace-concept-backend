@@ -2,5 +2,49 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ]
+  ],
+  "schedule": [
+    "every weekend"
+  ],
+  "separateMultipleMajor": true,
+  "rangeStrategy": "update-lockfile",
+  "major": {
+    "stabilityDays": 60,
+    "packageRules": [
+      {
+        "matchDepTypes": ["dependencies"],
+        "rangeStrategy": "update-lockfile"
+      },
+      {
+        "matchDepTypes": ["devDependencies"],
+        "rangeStrategy": "in-range-only"
+      },
+      {
+        "matchDepTypes": ["peerDependencies"],
+        "rangeStrategy": "update-lockfile"
+      }
+    ]
+  },
+  "minor": {
+    "groupName": "minor-all",
+    "packageRules": [
+      {
+        "matchDepTypes": ["dependencies"],
+        "rangeStrategy": "update-lockfile"
+      },
+      {
+        "matchDepTypes": ["devDependencies"],
+        "rangeStrategy": "update-lockfile"
+      },
+      {
+        "matchDepTypes": ["peerDependencies"],
+        "rangeStrategy": "update-lockfile"
+      }
+    ]
+  },
+  "patch": {
+    "groupName": "patch-all",
+    "rangeStrategy": "in-range-only",
+    "automerge": true
+  }
 }
