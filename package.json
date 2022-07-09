@@ -10,9 +10,8 @@
   },
   "scripts": {
     "build": "npx webpack bundle",
-    "deploy": "npx webpack bundle && npx cdk deploy",
+    "deploy": "npm install && npx webpack bundle && npx cdk deploy",
     "cdk": "cdk",
-    "test": "jest",
     "lint": "npx eslint **/*.js --fix"
   },
   "repository": {
@@ -31,7 +30,6 @@
     "aws-sdk": "^2.1135.0",
     "eslint": "^8.13.0",
     "eslint-plugin-node": "^11.1.0",
-    "jest": "^26.4.2",
     "terser-webpack-plugin": "^5.3.1",
     "webpack": "^5.72.1",
     "webpack-bundle-analyzer": "^4.5.0",

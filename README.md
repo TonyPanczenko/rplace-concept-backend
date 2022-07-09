@@ -1,12 +1,38 @@
-# Welcome to your CDK JavaScript project
+# rplace-concept - a crowd-sourced art project
 
-This is a blank project for JavaScript development with CDK.
+This app lets any visitor paint a single pixel of a persistent image visible to anyone. Users can see who and when painted each of the pixels. CDK proof of concept inspired by r/place. Available on [GH Pages](https://tonypanczenko.github.io/rplace-concept/) and my portfolio page on [tonypanczenko.github.io](https://tonypanczenko.github.io/).
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app. The build step is not required when using JavaScript.
+[![GitHub repo active](https://img.shields.io/badge/repo-active-brightgreen)](https://tonypanczenko.github.io/rplace-concept/)
+[![GitHub last commit](https://img.shields.io/github/last-commit/tonypanczenko/rplace-concept-backend)](https://github.com/TonyPanczenko/rplace-concept-backend)
+[![GitHub](https://img.shields.io/github/license/tonypanczenko/rplace-concept-backend)](https://github.com/TonyPanczenko/rplace-concept-backend/blob/production/LICENSE)
+[![Maintained with renovate](https://img.shields.io/badge/maintaied%20with-renovate-blue?logo=renovatebot)](https://renovatebot.com)
 
-## Useful commands
+## Project Setup
 
-* `npm run test`         perform the jest unit tests
+```sh
+npm install
+```
+
+### Compile Lambda functions source code into bundles
+
+```sh
+npm run build
+```
+
+### Compile Lambda functions, then deploy cloud resources on AWS
+
+```sh
+npm run deploy
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
+
+### Useful CDK commands
+
 * `cdk deploy`           deploy this stack to your default AWS account/region
 * `cdk diff`             compare deployed stack with current state
 * `cdk synth`            emits the synthesized CloudFormation template
