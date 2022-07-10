@@ -5,7 +5,7 @@ This app lets any visitor paint a single pixel of a persistent image visible to 
 [![GitHub repo active](https://img.shields.io/badge/repo-active-brightgreen)](https://tonypanczenko.github.io/rplace-concept/)
 [![GitHub last commit](https://img.shields.io/github/last-commit/tonypanczenko/rplace-concept-backend)](https://github.com/TonyPanczenko/rplace-concept-backend)
 [![GitHub](https://img.shields.io/github/license/tonypanczenko/rplace-concept-backend)](https://github.com/TonyPanczenko/rplace-concept-backend/blob/production/LICENSE)
-[![Maintained with renovate](https://img.shields.io/badge/maintaied%20with-renovate-blue?logo=renovatebot)](https://renovatebot.com)
+[![Maintained with renovate](https://img.shields.io/badge/maintained%20with-renovate-blue?logo=renovatebot)](https://renovatebot.com)
 
 ## Project Setup
 
