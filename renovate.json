@@ -45,6 +45,7 @@
   "patch": {
     "groupName": "patch-all",
     "rangeStrategy": "in-range-only",
-    "automerge": true
+    "automerge": true,
+    "ignoreTests": true
   }
 }
